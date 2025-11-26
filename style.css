@@ -1,0 +1,109 @@
+/* 全体の基本設定 */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    color: #333;
+}
+
+/* ヘッダー */
+.header {
+    padding: 10px 20px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    height: 50px;
+}
+
+/* メニュー */
+.nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 10px 20px;
+    background: #f8f8f8;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* メインビジュアル */
+.main-visual {
+    height: 60vh;
+    background: url('main.jpg') center/cover no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000;
+}
+
+.mv-text h1 {
+    font-size: 2.2rem;
+    font-family:"Meiryo";
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+.mv-text p {
+    margin-top: 10px;
+    font-family:"Meiryo";
+    font-size: 1.1rem;
+}
+
+/* 業務概要 */
+.services {
+    padding: 40px 20px;
+    background: #fafafa;
+}
+
+.service-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    flex: 1 1 calc(33% - 20px);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    min-width: 250px;
+}
+
+.service-box h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+/* レスポンシブ：スマホ向け */
+@media (max-width: 768px) {
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-visual {
+        height: 40vh;
+    }
+
+    .mv-text h1 {
+        font-size: 1.6rem;
+    }
+
+    .service-wrapper {
+        flex-direction: column;
+    }
+
+    .service-box {
+        flex: 1 1 100%;
+    }
+}
