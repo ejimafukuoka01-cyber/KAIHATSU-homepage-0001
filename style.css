@@ -80,6 +80,7 @@ body {
 }
 
 .mv-text {
+    font-size: 6vw; /* 画面幅の6%で文字サイズを自動調整 */
     position: absolute;
     top: 5%;   /* 上からの距離 */
     right: 5%; /* 右からの距離 */
