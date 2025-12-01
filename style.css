@@ -57,7 +57,7 @@ body {
     text-align: center;
     /* フェードイン用 */
     opacity: 0;                /* 初期状態は透明 */
-    animation: fadeIn 3s ease forwards; /* 3秒でフェードイン */
+    animation: fadeIn 5s ease forwards; /* 3秒でフェードイン */
 }
 
 @keyframes fadeIn {
