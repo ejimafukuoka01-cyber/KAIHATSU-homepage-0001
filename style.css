@@ -46,7 +46,6 @@ body {
 } */
 .main-visual2 {
     width: 100%;
-    max-height: 100vh;  /* 画面高さを超えない */
     object-fit: cover;  /* セクションを覆う */
     height: 100vh;
     background-image: url('images/IMG_home1.png');
