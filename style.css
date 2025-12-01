@@ -33,7 +33,8 @@ body {
 }
 
 /* メインビジュアル */
-.main-visual {
+/* .main-visual {
+
     height: 60vh;
     background: url('main.jpg') center/cover no-repeat;
     position: relative;
@@ -42,20 +43,70 @@ body {
     align-items: center;
     text-align: center;
     color: #000;
+} */
+.main-visual {
+    height: 100vh; /* 画面全体の高さにする場合 */
+    background-image: url('images/IMG_home1.png');
+    background-size: cover;        /* セクションいっぱいに広げる */
+    background-position: center;   /* 画像の中心を表示 */
+    background-repeat: no-repeat;  /* 繰り返さない */
+    display: flex;
+    justify-content: center;       /* テキスト中央寄せ */
+    align-items: center;
+    color: white;                  /* テキストを目立たせる */
+    text-align: center;
+    /* フェードイン用 */
+    opacity: 0;                /* 初期状態は透明 */
+    animation: fadeIn 3s ease forwards; /* 3秒でフェードイン */
 }
 
-.mv-text h1 {
-    font-size: 2.2rem;
-    font-family:"Meiryo";
-    margin: 0;
-    text-shadow: 0 0 10px rgba(0,0,0,0.6);
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
+.mv-text span {
+    display: inline-block;         /* アニメーションしやすくする */
+    opacity: 0;                    /* 初期は透明 */
+    transform: scale(0.5);         /* 少し小さくして始める */
+    animation: fadeScale 0.6s forwards;
+}
+
+.mv-text span:nth-child(1) { animation-delay: 0s; }
+.mv-text span:nth-child(2) { animation-delay: 0.1s; }
+.mv-text span:nth-child(3) { animation-delay: 0.2s; }
+.mv-text span:nth-child(4) { animation-delay: 0.3s; }
+.mv-text span:nth-child(5) { animation-delay: 0.4s; }
+.mv-text span:nth-child(6) { animation-delay: 0.5s; }
+/* p の文字も同様に nth-child を追加 */
+
+@keyframes fadeScale {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* 共通設定 */
+.mv-text h1,
 .mv-text p {
-    margin-top: 10px;
-    font-family:"Meiryo";
-    font-size: 1.1rem;
+    font-family: "Meiryo", sans-serif; /* フォントを統一 */
+    margin: 0;                         /* 余白リセット */
+    text-shadow: 0 0 10px rgba(0,0,0,0.6); /* おしゃれな影 */
 }
+
+/* h1 の文字サイズ */
+.mv-text h1 {
+    font-size: 3rem;      /* 好みのサイズに統一 */
+    letter-spacing: 0.05em; /* 少し文字間を開ける */
+}
+
+/* p の文字サイズ */
+.mv-text p {
+    font-size: 3rem;       /* h1 と同じくらいか、調整可能 */
+    margin-top: 10px;      /* 上との間隔 */
+}
+
 
 /* 業務概要 */
 .services {
