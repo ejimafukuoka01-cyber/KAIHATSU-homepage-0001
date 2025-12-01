@@ -45,10 +45,14 @@ body {
     color: #000;
 } */
 .main-visual2 {
-    height: 100vh; /* 画面全体の高さにする場合 */
+    width: 100%;
+    max-height: 100vh;  /* 画面高さを超えない */
+    object-fit: cover;  /* セクションを覆う */
+    height: 100vh;
     background-image: url('images/IMG_home1.png');
-    background-size: cover;        /* セクションいっぱいに広げる */
-    background-position: center;   /* 画像の中心を表示 */
+    background-size: cover;
+    background-position: center;
+    position: relative; /* 文字を絶対位置で配置する基準 */
     background-repeat: no-repeat;  /* 繰り返さない */
     display: flex;
     justify-content: center;       /* テキスト中央寄せ */
@@ -67,8 +71,8 @@ body {
 
 .mv-text {
     position: absolute;
-    top: 150px;   /* 上からの距離 */
-    right: 20px; /* 右からの距離 */
+    top: 5%;   /* 上からの距離 */
+    right: 5%; /* 右からの距離 */
     text-align: right; /* 文字を右揃え */
     color: white;      /* 文字色 */
     font-family: "Meiryo", sans-serif;
