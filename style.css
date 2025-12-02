@@ -41,6 +41,7 @@ nav.nav {
     margin: 0 !important;
     list-style: none !important;
     justify-content: left;    /* left揃え */
+    animation: fadeIn 8s ease forwards; /* 5秒でフェードイン */
 }
 
 .nav li {
@@ -153,7 +154,7 @@ nav.nav {
     font-family: 'Yu Mincho Demibold';
     padding: 40px 20px;
     background: #fafafa;
-    animation: fadeIn 5s ease forwards; /* 5秒でフェードイン */
+    animation: fadeIn 12s ease forwards; /* 5秒でフェードイン */
 }
 
 .service-wrapper {
