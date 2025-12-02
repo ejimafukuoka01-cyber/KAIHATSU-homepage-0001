@@ -88,7 +88,7 @@ nav.nav {
     text-align: center;
     /* フェードイン用 */
     opacity: 0;                /* 初期状態は透明 */
-    animation: fadeIn 5s ease forwards; /* 5秒でフェードイン */
+    animation: fadeIn 7s ease forwards; /* 5秒でフェードイン */
 }
 
 /* 背景画像 */
@@ -154,7 +154,7 @@ nav.nav {
     font-family: 'Yu Mincho Demibold';
     padding: 40px 20px;
     background: #fafafa;
-    animation: fadeIn 12s ease forwards; /* 5秒でフェードイン */
+    animation: fadeIn 15s ease forwards; /* 5秒でフェードイン */
 }
 
 .service-wrapper {
