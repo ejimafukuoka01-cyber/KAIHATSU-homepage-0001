@@ -45,8 +45,9 @@ nav.nav {
 }
 
 .nav li {
-    margin: 0 1rem;             /* メニュー同士の間隔 */
-    white-space: nowrap;        /* スマホでも改行させない */
+    margin: 0 1.2rem;             /* メニュー同士の間隔 */
+    white-space: nowrap;
+    flex-shrink: 0;       /* スマホでも改行させない */
 }
 
 .nav a {
@@ -119,7 +120,7 @@ nav.nav {
 }
 
 .mv-text span {
-    font-size: 3vw; /* 画面幅の6%で文字サイズを自動調整 */
+    font-size: 3vw; /* 画面幅の3%で文字サイズを自動調整 */
     font-family: 'Yu Mincho Demibold';
     display: inline-block;         /* アニメーションしやすくする */
     opacity: 0;                    /* 初期は透明 */
@@ -150,29 +151,12 @@ nav.nav {
     }
 }
 
-/* 共通設定 */
-.mv-text h1,
-.mv-text p {
-    font-family: "Meiryo", sans-serif; /* フォントを統一 */
-    margin: 0;                         /* 余白リセット */
-    text-shadow: 0 0 10px rgba(0,0,0,0.6); /* おしゃれな影 */
-}
 
-/* h1 の文字サイズ */
-.mv-text h1 {
-    font-size: 3rem;      /* 好みのサイズに統一 */
-    letter-spacing: 0.05em; /* 少し文字間を開ける */
-}
-
-/* p の文字サイズ */
-.mv-text p {
-    font-size: 3rem;       /* h1 と同じくらいか、調整可能 */
-    margin-top: 10px;      /* 上との間隔 */
-}
 
 
 /* 業務概要 */
 .services {
+    font-family: 'Yu Mincho Demibold';
     padding: 40px 20px;
     background: #fafafa;
 }
