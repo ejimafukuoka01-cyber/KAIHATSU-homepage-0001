@@ -17,13 +17,38 @@ body {
 }
 
 /* メニュー */
-.nav ul {
-    display: flex;
-    list-style: none;
+/* Google Fonts（丁寧系の日本語フォント Noto Sans JP） */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
+
+/* 余白・線を完全に消す */
+header.header,
+nav.nav {
     margin: 0;
-    padding: 10px 20px;
-    background: #fff;
-    gap: 20px;
+    padding: 0;
+    border: none;
+}
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;              /* 横並び */
+    flex-wrap: nowrap;          /* 改行しない */
+    justify-content: left;    /* 中央揃え */
+
+    font-family: 'Yu Mincho Demibold';
+    font-size: 1rem;            /* PC・スマホに自動対応 */
+}
+
+.nav li {
+    margin: 0 1rem;             /* メニュー同士の間隔 */
+    white-space: nowrap;        /* スマホでも改行させない */
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
 }
 
 .nav a {
@@ -81,17 +106,17 @@ body {
 }
 
 .mv-text {
-    font-size: 6vw; /* 画面幅の6%で文字サイズを自動調整 */
     position: absolute;
     top: 5%;   /* 上からの距離 */
     right: 5%; /* 右からの距離 */
     text-align: right; /* 文字を右揃え */
     color: white;      /* 文字色 */
-    font-family: "Meiryo", sans-serif;
     text-shadow: 0 0 10px rgba(0,0,0,0.6);
 }
 
 .mv-text span {
+    font-size: 3vw; /* 画面幅の6%で文字サイズを自動調整 */
+    font-family: 'Yu Mincho Demibold';
     display: inline-block;         /* アニメーションしやすくする */
     opacity: 0;                    /* 初期は透明 */
     transform: scale(0.5);         /* 少し小さくして始める */
