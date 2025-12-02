@@ -174,11 +174,6 @@ nav.nav {
 }
 
 /* レスポンシブ：スマホ向け */
-@media (max-width: 768px) {
-    .nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
 
     .main-visual {
         height: 40vh;
