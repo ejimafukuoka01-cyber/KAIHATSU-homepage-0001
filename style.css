@@ -31,6 +31,7 @@ nav.nav {
    強制横一列メニュー（最強版）
    =============================== */
 .nav ul {
+    font-family: 'Yu Mincho Demibold';
     display: flex !important;
     flex-wrap: nowrap !important;
     white-space: nowrap !important;
