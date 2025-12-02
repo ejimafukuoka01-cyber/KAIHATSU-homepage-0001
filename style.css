@@ -32,8 +32,12 @@ nav.nav {
     padding: 0;
     margin: 0;
 
-    display: flex;              /* 横並び */
-    flex-wrap: nowrap;          /* 改行しない */
+    display: flex;
+    flex-wrap: nowrap !important;  /* 絶対に改行禁止 */
+    white-space: nowrap !important; /* テキストの折り返しも禁止 */
+
+    overflow-x: auto;      /* はみ出しても横スクロールで見る */
+    -webkit-overflow-scrolling: touch;
     justify-content: left;    /* 中央揃え */
 
     font-family: 'Yu Mincho Demibold';
