@@ -40,6 +40,7 @@ nav.nav {
     padding: 0 !important;
     margin: 0 !important;
     list-style: none !important;
+    justify-content: left;    /* left揃え */
 }
 
 .nav li {
@@ -49,6 +50,8 @@ nav.nav {
 }
 
 .nav a {
+    font-size: 1vw; /* 画面幅の3%で文字サイズを自動調整 */
+    color: black;
     text-decoration: none !important;
     white-space: nowrap !important;
 }
@@ -191,4 +194,3 @@ nav.nav {
     .service-box {
         flex: 1 1 100%;
     }
-}
