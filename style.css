@@ -4,6 +4,9 @@ body {
     font-family: sans-serif;
     color: #333;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 /* ヘッダー */
 .header {
@@ -23,6 +26,10 @@ body {
     width: 35%;
     height: auto;
     display: block;
+    padding-left: 3vw;
+    /* ★右端にスペースを作る */
+    padding-top: 1vw;
+    /* ★右端にスペースを作る */
 }
 
 /* mv-text を見出しとして左寄せ */

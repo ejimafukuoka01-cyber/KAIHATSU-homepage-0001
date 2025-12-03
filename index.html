@@ -11,8 +11,8 @@
 <body>
 
     <!-- ヘッダー -->
-    <header class="header">
-        <img src="images/logo2.png" alt="ロゴ" class="logo">
+    <header class="header" id="target-home">
+            <img src="images/logo2.png" alt="ロゴ" class="logo">
         <div class="mv-text">
             <h1>
                 <span>　未</span><span>来</span><span>を</span><span>O</span><span>N</span><span>に</span><span>。</span><span>恩</span><span>照</span><span>ら</span><span>す</span><span>。</span>
@@ -23,10 +23,10 @@
     <!-- メニュー -->
     <nav class="nav">
         <ul>
-            <li><a href="#">ホーム</a></li>
-            <li><a href="#">サービス</a></li>
-            <li><a href="#">会社概要</a></li>
-            <li><a href="#">お問い合わせ</a></li>
+            <li><a href="#target-home">ホーム</a></li>
+            <li><a href="#target-job">サービス</a></li>
+            <li><a href="#target-company">会社概要</a></li>
+            <li><a href="#target-contact">お問い合わせ</a></li>
         </ul>
     </nav>
 
@@ -38,7 +38,7 @@
 
 
     <!-- 業務概要 -->
-    <section class="services">
+    <section class="services" id="target-job">
         <h2>サービス</h2>
         <div class="service-wrapper">
             <div class="service-box">
@@ -59,7 +59,7 @@
     </section>
 
     <!-- 会社概要 -->
-    <section class="company-info">
+    <section class="company-info" id="target-company">
         <h2>会社概要</h2>
         <table class="company-table">
             <tr>
@@ -86,7 +86,7 @@
     </section>
 
     <!-- お問い合わせ -->
-    <section class="contact">
+    <section class="contact" id="target-contact">
         <h2>お問い合わせ</h2>
         <p>お問い合わせは以下のフォームまたはメールでお願いします。</p>
         <ul>
