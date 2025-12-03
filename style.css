@@ -26,9 +26,9 @@ html{
     width: 35%;
     height: auto;
     display: block;
-    padding-left: 3vw;
+    padding-left: 3vw !important;
     /* ★右端にスペースを作る */
-    padding-top: 1vw;
+    padding-top: 1vw !important;
     /* ★右端にスペースを作る */
 }
 
