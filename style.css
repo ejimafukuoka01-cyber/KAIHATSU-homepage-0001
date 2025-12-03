@@ -16,6 +16,7 @@ body {
 }
 
 .logo {
+    align-items: center;  /* 上下中央揃え */
     width:35%;
     height: auto;
     display: block;
@@ -23,6 +24,7 @@ body {
 
 /* mv-text を見出しとして左寄せ */
 .header .mv-text {
+    align-items: center;  /* 上下中央揃え */
     position: static;   /* ★絶対配置を解除して通常の横並びへ */
     text-align: left;
     top: 5%;   /* 上からの距離 */
