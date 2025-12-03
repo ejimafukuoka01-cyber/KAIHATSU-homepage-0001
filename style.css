@@ -7,13 +7,29 @@ body {
 
 /* ヘッダー */
 .header {
+    display: flex;
+    align-items: center;  /* 上下中央揃え */
+    gap: 20px;            /* ロゴと文字の間隔 */
     padding: 10px 20px;
     background: #fff;
-    border-bottom: 1px solid #eee;
+    border-bottom: none;
 }
 
 .logo {
-    height: 50px;
+    width:20%;
+    height: auto;
+    display: block;
+}
+
+/* mv-text を見出しとして左寄せ */
+.header .mv-text {
+    position: static;   /* ★絶対配置を解除して通常の横並びへ */
+    text-align: left;
+    top: 5%;   /* 上からの距離 */
+    right: 5%; /* 右からの距離 */
+    text-align: right; /* 文字を右揃え */
+    color: white;      /* 文字色 */
+    text-shadow: 0 0 10px rgba(0,0,0,0.6);
 }
 
 /* メニュー */
@@ -40,7 +56,7 @@ nav.nav {
     padding: 0 !important;
     margin: 0 !important;
     list-style: none !important;
-    justify-content: left;    /* left揃え */
+    justify-content: right;    /* left揃え */
     animation: fadeIn 8s ease forwards; /* 5秒でフェードイン */
 }
 
@@ -105,17 +121,9 @@ nav.nav {
     to { opacity: 1; }
 }
 
-.mv-text {
-    position: absolute;
-    top: 5%;   /* 上からの距離 */
-    right: 5%; /* 右からの距離 */
-    text-align: right; /* 文字を右揃え */
-    color: white;      /* 文字色 */
-    text-shadow: 0 0 10px rgba(0,0,0,0.6);
-}
 
 .mv-text span {
-    font-size: 3vw; /* 画面幅の3%で文字サイズを自動調整 */
+    font-size: 2vw; /* 画面幅の3%で文字サイズを自動調整 */
     font-family: 'Yu Mincho Demibold';
     display: inline-block;         /* アニメーションしやすくする */
     opacity: 0;                    /* 初期は透明 */
