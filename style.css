@@ -26,12 +26,13 @@ body {
 .header .mv-text {
     align-items: center;  /* 上下中央揃え */
     position: static;   /* ★絶対配置を解除して通常の横並びへ */
-    text-align: left;
     top: 5%;   /* 上からの距離 */
     right: 5%; /* 右からの距離 */
     text-align: right; /* 文字を右揃え */
     color: black;      /* 文字色 */
     text-shadow: 0 0 10px rgba(0,0,0,0.6);
+    justify-content: flex-end;  /* ★右寄せになる */
+    width: 100%; /* 右寄せが効くために必須 */
 }
 
 /* メニュー */
