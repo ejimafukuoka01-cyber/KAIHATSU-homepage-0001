@@ -33,6 +33,7 @@ body {
     text-shadow: 0 0 10px rgba(0,0,0,0.6);
     justify-content: flex-end;  /* ★右寄せになる */
     width: 100%; /* 右寄せが効くために必須 */
+    padding-right: 3vw;        /* ★右端にスペースを作る */
 }
 
 /* メニュー */
