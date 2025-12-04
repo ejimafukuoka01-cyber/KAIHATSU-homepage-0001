@@ -255,7 +255,7 @@ nav.nav {
     margin-top: 40px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    animation: fadeIn 15s ease forwards;
+    animation: fadeIn 10s ease forwards;
 }
 .services h2 {
     font-size: 2rem;
@@ -315,7 +315,7 @@ nav.nav {
     margin-top: 40px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    animation: fadeIn 15s ease forwards;
+    animation: fadeIn 11s ease forwards;
 }
 
 .company-info h2 {
@@ -354,7 +354,7 @@ nav.nav {
     margin-top: 40px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 2s ease forwards;
+    animation: fadeIn 6s ease forwards;
 }
 
 .contact h2 {
