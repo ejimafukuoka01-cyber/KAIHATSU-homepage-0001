@@ -18,6 +18,7 @@ html{
     padding: 10px 20px;
     background: #fff;
     border-bottom: none;
+    pointer-events: none;
 }
 
 .logo {
@@ -25,11 +26,11 @@ html{
     /* 上下中央揃え */
     width: 35%;
     height: auto;
-    display: block;
     padding-left: 3vw !important;
     /* ★右端にスペースを作る */
     padding-top: 1vw !important;
     /* ★右端にスペースを作る */
+    pointer-events: auto;
 }
 
 /* mv-text を見出しとして左寄せ */
@@ -414,3 +415,31 @@ nav.nav {
         width: 120px;
     }
 }
+
+
+
+
+
+/* ===============================
+サービスページ
+=============================== */
+
+.detail-page h2 {
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+    position: relative;
+}
+
+.detail-page h2::before,
+.detail-page h2::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background: gold;
+    top: 50%;
+}
+
+.detail-page h2::before { left: 20%; }
+.detail-page h2::after { right: 20%; }
