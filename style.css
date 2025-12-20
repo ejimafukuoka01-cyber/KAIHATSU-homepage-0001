@@ -435,7 +435,7 @@ nav.nav {
 .detail-page h2::after {
     content: "";
     position: absolute;
-    width: 60px;
+    width: 5%;
     height: 2px;
     background: gold;
     top: 50%;
@@ -443,3 +443,28 @@ nav.nav {
 
 .detail-page h2::before { left: 20%; }
 .detail-page h2::after { right: 20%; }
+
+
+/* ===============================
+会社概要
+=============================== */
+
+.company-info h2 {
+    text-align: center;
+    color: brack;
+    margin-top: 40px;
+    position: relative;
+}
+
+.company-info h2::before,
+.company-info h2::after {
+    content: "";
+    position: absolute;
+    width: 5%;
+    height: 2px;
+    background: gold;
+    top: 50%;
+}
+
+.company-info h2::before { left: 20%; }
+.company-info h2::after { right: 20%; }
