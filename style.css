@@ -141,7 +141,7 @@ nav.nav {
     /* フェードイン用 */
     opacity: 0;
     /* 初期状態は透明 */
-    animation: fadeIn 7s ease forwards;
+    animation: fadeIn 6s ease forwards;
     /* 5秒でフェードイン */
 }
 
@@ -255,7 +255,8 @@ nav.nav {
     padding: 80px 30px;
     margin: 0 auto;
     max-width: 1200px;
-    background: transparent; /* ← 外枠を削除 */
+    background: transparent;
+    /* ← 外枠を削除 */
     animation: fadeIn 10s ease forwards;
 }
 
@@ -276,12 +277,10 @@ nav.nav {
     width: 80px;
     height: 3px;
     margin: 16px auto 0;
-    background: linear-gradient(
-        90deg,
-        transparent,
-        #d4af37,
-        transparent
-    );
+    background: linear-gradient(90deg,
+            transparent,
+            #d4af37,
+            transparent);
 }
 
 /* ボックス全体 */
@@ -295,11 +294,9 @@ nav.nav {
 /* 各サービスボックス */
 .service-box {
     flex: 1;
-    background: linear-gradient(
-        145deg,
-        #ffffff,
-        #f4f4f4
-    );
+    background: linear-gradient(145deg,
+            #ffffff,
+            #f4f4f4);
     padding: 32px 26px;
     border-radius: 14px;
     box-shadow:
@@ -318,12 +315,10 @@ nav.nav {
     left: 0;
     width: 100%;
     height: 4px;
-    background: linear-gradient(
-        90deg,
-        transparent,
-        #d4af37,
-        transparent
-    );
+    background: linear-gradient(90deg,
+            transparent,
+            #d4af37,
+            transparent);
 }
 
 /* hover */
@@ -362,6 +357,15 @@ nav.nav {
     }
 }
 
+/* service-box をリンク化しても見た目を保つ */
+.service-link {
+    text-decoration: none;
+    color: inherit;
+    flex: 1;
+    display: block;
+}
+
+
 
 
 
@@ -384,6 +388,41 @@ nav.nav {
 .service-box {
     flex: 1 1 100%;
 }
+
+
+/* ===============================
+   社長挨拶
+=============================== */
+
+.message {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    /* ← 中央寄せ */
+    line-height: 1.9;
+    color: #001d3d;
+}
+
+.message p {
+    margin-bottom: 1.8em;
+    font-size: 1rem;
+}
+
+/* キャッチコピー */
+.message .catch {
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    color: #000;
+    margin: 2.5em 0;
+}
+
+/* 結び */
+.message .end {
+    margin-top: 3em;
+    font-weight: 500;
+}
+
 
 /* ===============================
    会社概要
@@ -461,7 +500,7 @@ nav.nav {
     font-size: 1.1rem;
 }
 
-.contactform{
+.contactform {
     color: gold;
 }
 
