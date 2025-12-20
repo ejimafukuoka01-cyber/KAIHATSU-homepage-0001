@@ -406,13 +406,57 @@ nav.nav {
    社長挨拶
 =============================== */
 
+.ceo {
+    font-family: 'Yu Mincho Demibold';
+    background: #fafafa;
+    /* 優しい背景色 */
+    padding: 40px 20px;
+    margin-top: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    animation: fadeIn 6s ease forwards;
+}
+
+.ceo h2 {
+    font-size: 2rem;
+    color: #001d3d;
+    margin-bottom: 20px;
+    border-left: 5px solid gold;
+    padding-left: 10px;
+}
+
+.ceo h2 {
+    text-align: center;
+    color: brack;
+    margin-top: 40px;
+    position: relative;
+}
+
+.ceo h2::before,
+.ceo h2::after {
+    content: "";
+    position: absolute;
+    width: 5%;
+    height: 2px;
+    background: gold;
+    top: 50%;
+}
+
+.ceo h2::before {
+    left: 20%;
+}
+
+.ceo h2::after {
+    right: 20%;
+}
+
 .message {
     max-width: 900px;
     margin: 0 auto;
     text-align: center;
     /* ← 中央寄せ */
     line-height: 1.9;
-    color: #001d3d;
+    color: #000;
 }
 
 .message p {
@@ -447,7 +491,7 @@ nav.nav {
     margin-top: 40px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    animation: fadeIn 10s ease forwards;
+    animation: fadeIn 6s ease forwards;
 }
 
 .company-info h2 {
