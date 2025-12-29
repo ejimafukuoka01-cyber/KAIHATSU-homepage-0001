@@ -647,18 +647,24 @@ nav.nav {
     /* 文章を広く使う */
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
+
     .service-box {
-        flex-direction: column;
-        /* 縦並び */
-        text-align: center;
+        flex-direction: column;     /* ← 縦並び */
+        gap: 20px;
+        align-items: flex-start;    /* 左揃え */
     }
 
     .service-img {
+        width: 100%;                /* 画面幅いっぱい */
         max-width: 100%;
+    }
+
+    .service-box section {
         width: 100%;
     }
 }
+
 
 /* ===============================
 サービス画面：アンカーリンク位置調整
