@@ -115,7 +115,7 @@ nav.nav {
     text-align: center;
     color: #000;
 } */
-.main-visual2 {
+.main-visual {
     position: relative;
     width: 100%;
     height: auto;
@@ -155,6 +155,40 @@ nav.nav {
     /* 高さの上限 */
     display: block;
 }
+
+
+
+.main-visual {
+    width: 100%;
+    overflow: hidden;
+    /* はみ出した画像を隠す */
+}
+
+.slider {
+    display: flex;
+    /* 横並び */
+    width: 300%;
+    /* 画像3枚分 */
+    transition: transform 0.8s ease;
+    /* スライドアニメーション */
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+    /* 縮まらないようにする */
+}
+
+.bg-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+
+
 
 @keyframes fadeIn {
     from {
@@ -382,11 +416,11 @@ nav.nav {
 
 
 
-/* レスポンシブ：スマホ向け */
+/* レスポンシブ：スマホ向け
 
 .main-visual {
     height: 40vh;
-}
+}*/
 
 .mv-text h1 {
     font-size: 1.6rem;
