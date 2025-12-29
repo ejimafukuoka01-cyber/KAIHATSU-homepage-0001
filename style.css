@@ -161,29 +161,24 @@ nav.nav {
 .main-visual {
     width: 100%;
     overflow: hidden;
-    /* はみ出した画像を隠す */
+    /* はみ出し防止 */
 }
 
 .slider {
     display: flex;
-    /* 横並び */
-    width: 300%;
-    /* 画像3枚分 */
-    transition: transform 0.8s ease;
-    /* スライドアニメーション */
+    transition: transform 1.2s ease-in-out;
+    /* ← 滑らかポイント */
 }
 
 .slide {
-    width: 100%;
-    flex-shrink: 0;
-    /* 縮まらないようにする */
+    min-width: 100%;
 }
 
 .bg-img {
     width: 100%;
-    height: auto;
     display: block;
 }
+
 
 
 

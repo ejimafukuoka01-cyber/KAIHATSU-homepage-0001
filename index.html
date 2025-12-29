@@ -116,26 +116,17 @@
     <script>
         const slider = document.querySelector('.slider');
         const slides = document.querySelectorAll('.slide');
-        const slideCount = slides.length;
-
         let index = 0;
 
         setInterval(() => {
             index++;
-
-            slider.style.transition = 'transform 0.8s ease';
-            slider.style.transform = `translateX(-${index * 100}%)`;
-
-            // 最後の画像まで行ったら最初に戻す
-            if (index === slideCount) {
-                setTimeout(() => {
-                    slider.style.transition = 'none'; // 一瞬で戻す
-                    slider.style.transform = 'translateX(0)';
-                    index = 0;
-                }, 800); // アニメーション時間と同じ
+            if (index >= slides.length) {
+                index = 0;
             }
-        }, 3000); // 3秒ごとに自動スライド
+            slider.style.transform = `translateX(-${index * 100}%)`;
+        }, 4000); // 4秒ごとに切り替え
     </script>
+
 
 
 
